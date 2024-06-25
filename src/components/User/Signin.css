@@ -1,0 +1,24 @@
+#kakaoLogin {
+    border-radius: 12px;
+    background-color:  #FEE500;
+    color: 	#000000 85%;
+    padding: 12 6;
+    padding-top: 6;
+    height: 38px;
+}
+
+#naverLogin {
+    border-radius: 12px;
+    background-color:  #03C75A;
+    color: 	#ffff;
+    padding: 12 6;
+    padding-top: 6;
+    height: 38px;
+}
+
+#loginButtons {
+    .loginButton {
+        border-radius: 12px;
+    }
+
+}

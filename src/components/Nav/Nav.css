@@ -1,0 +1,67 @@
+.navbar-brand a:hover  {
+    border-bottom: solid green;
+}
+/* src/components/Nav/Nav.css */
+/* src/components/Nav/Nav.css */
+.navContainer {
+    position: absolute;
+    top: 100%;
+    list-style-type: none;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+    z-index: 900;
+}
+
+.navContainer li {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navContainer li p:hover {
+    border-bottom: solid green;
+    /* 상위 카테고리 hover 시 보더 추가 */
+}
+
+.detailMenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 2px);
+    background-color: #f5f5f5;
+    z-index: 1000;
+    opacity: 0;
+    visibility: visible;
+    transform: translateX(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.detailMenu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.detailMenu ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.detailMenu ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+.detailMenu li.active {
+    border-bottom: solid green;
+}
+
+.detailMenu ul li:hover {
+    border-bottom: solid green;
+    /* 서브카테고리 hover 시 보더 추가 */
+}
+
+.categories-container {
+    position: relative;
+    display: inline-block;
+}
